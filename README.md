@@ -1,6 +1,5 @@
-![image](https://user-images.githubusercontent.com/86997572/193602886-ed12b61a-57e6-4606-881e-3ff0cbe8a0cc.png)
 1.pip install flask
-
+![image](https://user-images.githubusercontent.com/86997572/193602886-ed12b61a-57e6-4606-881e-3ff0cbe8a0cc.png)
 
 
 2.Open directory of the project in git bash ![image](https://user-images.githubusercontent.com/86997572/193603442-68adf488-66c1-4e95-94d0-c1e566e0b789.png)
