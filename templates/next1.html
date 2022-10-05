@@ -74,32 +74,15 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Главный</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/testform">Тест</a>
-          </li>
-        </ul>
+  <div class="container py-5">
+      <div style="position: relative;">
+        <h5 style="margin-left:350px;">1.Клиническая характеристика больного</h5>
       </div>
-    </div>
-  </nav>
-</header>
-  
-  <div class="container pt-5 mt-5 py-5">
-    <div style="border:1px black solid; border-bottom: 800px;" class="row pt-5 py-5">
-      <h5>Клиническая характеристика больного</h2>
+    <div class="row py-5 shadow">
       <div class="col-12">
         <form action="/result1" method="POST">
-            <div class="mt-5">
-            <p>1.Общее состояние:</p>
+            <div class="">
+            <p>Общее состояние:</p>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="относительно удовлетворительное">
             <label class="form-check-label" for="inlineRadio1">относительно удовлетворительное</label>
@@ -114,99 +97,841 @@
           </div>
           </div>
           <div class="mt-5">
-              <p>2.Жалобы</p>
+            <p>Жалобы</p>
+            <div class="row">
+              <div class="col-md-12">
+                <p>Oдышка</p>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="одышка">
-              <label class="form-check-label" for="inlineRadio4">одышка</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="легкая">
+              <label class="form-check-label" for="inlineRadio4">легкая</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="легкая">
-              <label class="form-check-label" for="inlineRadio5">легкая</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="умеренная">
+              <label class="form-check-label" for="inlineRadio5">умеренная</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio6" value="умеренная">
-              <label class="form-check-label" for="inlineRadio6">умеренная</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio6" value="выраженная">
+              <label class="form-check-label" for="inlineRadio6">выраженная</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio7" value="выраженная">
-              <label class="form-check-label" for="inlineRadio7">выраженная</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio7" value="нет">
+              <label class="form-check-label" for="inlineRadio7">нет</label>
+            </div>
+            <p>Cердцебиение</p>
+          <div class="mt-5">
+              <p>Боли в области сердца: </p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio8" value="при физической нагрузке">
+              <label class="form-check-label" for="inlineRadio8">при физической нагрузке</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio8" value="нет">
-              <label class="form-check-label" for="inlineRadio8">нет</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio9" value="при психоэмоциональном перенапряжении">
+              <label class="form-check-label" for="inlineRadio9">при психоэмоциональном перенапряжении</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio10" value="не связанные с физической нагрузкой в положении покоя">
+              <label class="form-check-label" for="inlineRadio10">не связанные с физической нагрузкой в положении покоя</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio11" value="нет">
+              <label class="form-check-label" for="inlineRadio11">нет</label>
+            </div>
+            <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Согласен с условиями
+              </label>
+              <div class="invalid-feedback">
+                Вы должны согласиться перед отправкой.
+              </div>
+          </div>
+          </div>
+              </div>
+              <div class="col-md-12">
+                <p>Головные боли:</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio12" value="есть">
+              <label class="form-check-label" for="inlineRadio12">есть</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio13" value="нет">
+              <label class="form-check-label" for="inlineRadio13">нет</label>
             </div>
           </div>
           <div class="mt-5">
-              <p>3.Боли в области сердца: </p>
+              <p>Головокружения:</p>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio9" value="при физической нагрузке">
-              <label class="form-check-label" for="inlineRadio9">при физической нагрузке</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio14" value="есть">
+              <label class="form-check-label" for="inlineRadio14">есть</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio10" value="при психоэмоциональном перенапряжении">
-              <label class="form-check-label" for="inlineRadio10">при психоэмоциональном перенапряжении</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio11" value="не связанные с физической нагрузкой в положении покоя">
-              <label class="form-check-label" for="inlineRadio11">не связанные с физической нагрузкой в положении покоя</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio12" value="нет">
-              <label class="form-check-label" for="inlineRadio12">нет</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio15" value="нет">
+              <label class="form-check-label" for="inlineRadio15">нет</label>
             </div>
           </div>
           <div class="mt-5">
-              <p>4.Головные боли:</p>
+              <p>Подъёмы АД</p>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio13" value="есть">
-              <label class="form-check-label" for="inlineRadio13">есть</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio14" value="нет">
-              <label class="form-check-label" for="inlineRadio14">нет</label>
-            </div>
-            </div>
-          <div class="mt-5">
-              <p>5.Головокружения:</p>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio15" value="есть">
-              <label class="form-check-label" for="inlineRadio15">есть</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio16" value="нет">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio16" value="нет">
               <label class="form-check-label" for="inlineRadio16">нет</label>
             </div>
-            </div>
-          <div class="mt-5">
-              <p>6.Подъёмы АД</p>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio17" value="нет">
-              <label class="form-check-label" for="inlineRadio17">нет</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio17" value="до 140/90 мм.рт.ст.">
+              <label class="form-check-label" for="inlineRadio17">до 140/90 мм.рт.ст.</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio18" value="до 140/90 мм.рт.ст.">
-              <label class="form-check-label" for="inlineRadio18">до 140/90 мм.рт.ст.</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio18" value="до 160/100 мм.рт.ст">
+              <label class="form-check-label" for="inlineRadio18">до 160/100 мм.рт.ст</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio19" value="до 160/100 мм.рт.ст">
-              <label class="form-check-label" for="inlineRadio19">до 160/100 мм.рт.ст</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio19" value="до 180/100 мм.рт.ст">
+              <label class="form-check-label" for="inlineRadio19">до 180/100 мм.рт.ст</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio20" value="до 180/100 мм.рт.ст">
-              <label class="form-check-label" for="inlineRadio20">до 180/100 мм.рт.ст</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio21" value="выше 180/100 мм.рт.ст.">
-              <label class="form-check-label" for="inlineRadio21">выше 180/100 мм.рт.ст.</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio20" value="выше 180/100 мм.рт.ст.">
+              <label class="form-check-label" for="inlineRadio20">выше 180/100 мм.рт.ст.</label>
             </div>
             </div>
           </div>
-          <input class="btn btn-primary shadow ms-3 mt-5" style="width: 150px; border-radius: 10px;" type="submit" value="Следующий">
+              </div>
+            </div>
+          <div class="mt-5">
+            <div style="position: relative;">
+              <h5 style="margin-left:350px;">2.Сопутствующие заболевания (отметить):</h5>
+            </div>
+          <div class="row shadow" style="border: 2px solid whitesmoke; border-radius: 15px;">
+            <div class="col-md-6">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck01" required>
+              <label class="form-check-label" for="invalidCheck01">
+                Гипертоническая болезнь
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck02" required>
+              <label class="form-check-label" for="invalidCheck02">
+                Ишемическая болезнь сердца. Стабильная стенокардия нарушения 
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck03" required>
+              <label class="form-check-label" for="invalidCheck03">
+                В анамнезе перенесенный ИМ 
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck04" required>
+              <label class="form-check-label" for="invalidCheck04">
+                В анамнезе перенесенный ОНМК, ТИА
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck05" required>
+                <label class="form-check-label" for="invalidCheck05">
+                    ХСН
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck06" required>
+                <label class="form-check-label" for="invalidCheck06">
+                Атеросклероз периферический многососудистый со стенозом
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck06" required>
+                <label class="form-check-label" for="invalidCheck06">
+                  Перенесенные операции на сердце и сосудах:
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck07" required>
+                <label class="form-check-label" for="invalidCheck07">
+                  Нарушения ритма:
+                </label>
+            </div>
+            <div class="col-md-6">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck08" required>
+              <label class="form-check-label" for="invalidCheck08">
+                Сахарный диабет без осложнений
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck09" required>
+              <label class="form-check-label" for="invalidCheck09">
+                Сахарный диабет с осложнениями
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck10" required>
+              <label class="form-check-label" for="invalidCheck10">
+                Нарушение толерантности к глюкозе
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" required>
+              <label class="form-check-label" for="invalidCheck11">
+                ХБП 
+              </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck12" required>
+                <label class="form-check-label" for="invalidCheck12">
+                    ХОБЛ или БА
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck13" required>
+                <label class="form-check-label" for="invalidCheck13">
+                  Ковид-19
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck14" required>
+                <label class="form-check-label" for="invalidCheck14">
+                  Врожденные и приобретенные пороки сердца
+                </label>
+              <br>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck15" required>
+                <label class="form-check-label" for="invalidCheck15">
+                  Онкологические заболевания
+                </label>
+            </div>
+          </div>
+          <div class="mt-5">
+            <div style="position: relative;">
+              <h5 style="margin-left:350px;">3.Принимает ли медикаментозную терапию (отметить):</h5>
+            </div>
+            <div class="row shadow" style="border: 2px solid whitesmoke; border-radius: 15px;">
+              <div class="col-md-6">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck15" required>
+                  <label class="form-check-label" for="invalidCheck15">
+                    диуретики  
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck16" required>
+                  <label class="form-check-label" for="invalidCheck16">
+                    бета-блокаторы  
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck17" required>
+                  <label class="form-check-label" for="invalidCheck17">
+                    антагонисты кальция 
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck18" required>
+                  <label class="form-check-label" for="invalidCheck18">
+                    ингибиторы АПФ 
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck19" required>
+                  <label class="form-check-label" for="invalidCheck19">
+                    АРА
+                  </label>
+              </div>
+                            <div class="col-md-6">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck20" required>
+                  <label class="form-check-label" for="invalidCheck20">
+                    АМКР  
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck21" required>
+                  <label class="form-check-label" for="invalidCheck21">
+                    Антиаритмики
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck22" required>
+                  <label class="form-check-label" for="invalidCheck22">
+                    Нитраты
+                  </label>
+                <br>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck23" required>
+                  <label class="form-check-label" for="invalidCheck23">
+                    Сердечные гликозиды
+                  </label>
+              </div>
+            </div>
+            <div class="mt-5">
+            <div style="position: relative;">
+              <h5 style="margin-left:350px;">4.Вредные привычки и наследственность:</h5>
+            </div>
+            <div class="row shadow" style="border: 2px solid whitesmoke; border-radius: 15px;">
+              <div class="col-md-5">
+                <p class="ms-5">1.Употребление алкоголя (отметить):</p>
+              </div>
+              <div class="col-md-3 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio21" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio21">да</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio22" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio22">нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio23" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio23">иногда</label>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <p class="ms-5">2.Употребление алкоголя (отметить):</p>
+              </div>
+              <div class="col-md-4 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio24" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio24">да</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio25" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio25">нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio26" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio26">курил в прошлом</label>
+                </div>
+              </div>
+              <br>
+              <br>
+              <p class="ms-5">3.Наследственность отягощена или не отягощена:</p>
+              <br>
+                <div class="col-md-4">
+                  <p class="ms-5">ГБ:</p>
+                </div>
+              <div class="col-md-6 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio27" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio27">Нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio28" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio28">Отец</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio29" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio29">Мать</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio30" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio30">Отец и мать</label>
+                </div>
+              </div>
+                <div class="col-md-4">
+                  <p class="ms-5">ИБС:</p>
+                </div>
+              <div class="col-md-6 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio31" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio31">Нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio32" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio32">Отец</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio33" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio33">Мать</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio34" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio34">Отец и мать</label>
+                </div>
+              </div>
+                <div class="col-md-4">
+                  <p class="ms-5">СД:</p>
+                </div>
+              <div class="col-md-6 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio35" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio35">Нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio36" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio36">Отец</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio37" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio37">Мать</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="inlineRadio38" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio38">Отец и мать</label>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+                <div class="col-md-5">
+                  <p class="ms-5">Ранняя смерть от ССЗ до 50 лет родителей:</p>
+                </div>
+              <div class="col-md-6 px-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio39" value="относительно удовлетворительное">
+                  <label class="form-check-label" for="inlineRadio39">Нет</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio40" value="средней тяжести">
+                  <label class="form-check-label" for="inlineRadio40">Отец</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio41" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio41">Мать</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="inlineRadio41" value="тяжелое">
+                  <label class="form-check-label" for="inlineRadio41">Отец и мать</label>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">5.Гемодинамические показатели и показатели объективного статуса:
+</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>САД мм.рт.ст</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t1"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>ДАД мм.рт.ст</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t2"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Пульс (ЧСС) уд.в мин</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t3"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>АД пульсовое (АДП) = САД –ДАД мм.рт.ст.</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t4"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>РО2 %</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t5"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Аускультация легкие</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t6"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Аускультация сердце</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t7"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Наличие отеков</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t8"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>ПСВ мл/мин</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t9"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">6.Антропометрические данные и данные Tanita:</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Рост (Р), м (данные вводятся врачом)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t10"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Масса тела (МТ) кг (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t11"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Окружность талии, см (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t12"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Окружность бедер, см (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t13"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Соотношение окружность талии/окружность бедер (высчитывается по формуле)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t14"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>ИМТ (высчитывается Автоматически) = МТ/(Р, м) <sup>2</sup></td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t15"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Наличие и степень ожирения по ИМТ (расчетный)
+19-24,9 - Норма, 25-29,9 предожирение, 30 - 34,9 - первая степень ожирения; от 35 до 39,9 - вторая степень; от 40 до 44,9 — третья степень; свыше 45 — четвертая степень. </td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t16"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>% жировой ткани (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t17"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Внутренний жир (данные вводятся врачом).
+1-12 уровень – в пределах нормы
+13-59 – выше нормы</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t18"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Мышечная масса (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t19"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Тип телосложения (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t20"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>Костная ткань (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t21"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>Скорость обмена (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t22"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">14</th>
+                    <td>Метаболический возраст (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t23"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">15</th>
+                    <td>% воды в организме (данные вводятся врачом).</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t23"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">7.Лабораторные данные:</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <p>Общий анализ крови</p>
+                    <th scope="row">1</th>
+                    <td>Hb, г/л </td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t24"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Эритроциты, 1012/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t25"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Лейкоциты, 109/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t26"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Тромбоциты, 109/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t27"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>СОЭ, мм/час</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t28"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Глюкоза в крови, ммоль/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t29"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>С-реактивный белок, мг/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t30"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Мочевина, ммоль/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t31"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Креатинин, мкмоль/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t32"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>СКФ расчетным методом по формуле CKD-EPI, мл/мин/1,73 м2 (автоматически)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t33"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>АЛТ, ед/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t34"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>АСТ, ед/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t35"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>Мочевая кислота, мкмоль/л</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t36"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">8.Определение толерантности к физической нагрузке:</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>ТШХ</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t36"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Шкала Борга</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t37"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Проба Руфье-Диксона I=(P1+P2+P3)-200/10</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t38"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Для тренированных больных – ВЭМ проба</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t39"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Ступень физической подготовленности (от 1 мин до 5 максимальная) расчетная</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t40"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Массовый тест определения физического состояния Е.А.Пирогова, 1984 (балл/уровень)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t41"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">9.Инструментальные методы исследования: <br>  Плетизмография (Ангиоскан-1)
+</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Индекс отражения RI</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t42"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Индекс ригидности (скорость пульсовой волны) SI</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t43"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Биологический возраст сосудов, VA</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t44"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Тип ПВ (тип пульсовой волны А, В, С)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t45"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">10.Оценка качеств жизни и уровня стресса.</h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10.1.Уровень стресса (Reeder L.)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t46"></td>
+                  </tr>
+                  <tr>
+                    <td>10.2. Анкета оценки здоровья и качества жизни EQ–-5D</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t47"></td>
+                  </tr>
+                  <tr>
+                    <td>А</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t48"></td>
+                  </tr>
+                  <tr>
+                    <td>Б</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t49"></td>
+                  </tr>
+                  <tr>
+                    <td>В</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t50"></td>
+                  </tr>
+                  <tr>
+                    <td>С</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t51"></td>
+                  </tr>
+                  <tr>
+                    <td>Д</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t52"></td>
+                  </tr>
+                  <tr>
+                    <td>Общий балл</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t53"></td>
+                  </tr>
+                  <tr>
+                    <td>EQ–VAS</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t54"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row shadow mt-5">
+              <div class="mt-5">
+                <div style="position: relative;">
+                  <h5 style="margin-left:280px;">11.Расчетные показатели </h5>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№ п/п</th>
+                    <th scope="col">Показатели</th>
+                    <th scope="col">Исходно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Индекс адаптационного потенциала ССС Р.М. Баевского расчетный</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t55"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>SCORE-2 у больных старше 40 лет</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t56"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Шкала определения относительного риска, используемая для молодых людей (<40 лет)</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t57"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Группа риска </td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t58"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Факторы риска</td>
+                    <td><input style="border-color:whitesmoke;" type="text" name="t59"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          <input class="btn btn-primary shadow ms-3 mt-5" style="width: 150px;" type="submit" value="Следующий">
           </form>
       </div>
     </div>
   </div>
-  
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
